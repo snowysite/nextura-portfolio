@@ -1,0 +1,400 @@
+/* =====================================================
+   NEXORA RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    body {
+        cursor: auto;
+    }
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
+
+
+    .navbar {
+
+        height: 75px;
+
+        padding: 0 20px;
+    }
+
+
+    .nav-links,
+    .nav-contact {
+
+        display: none;
+    }
+
+
+    .menu-toggle {
+
+        display: flex;
+    }
+
+
+    .mobile-menu {
+
+        display: block;
+    }
+
+
+    .hero {
+
+        padding: 130px 20px 70px;
+
+        min-height: 100svh;
+    }
+
+
+    .hero-topline {
+
+        top: 90px;
+
+        left: 20px;
+        right: 20px;
+    }
+
+
+    .hero-title {
+
+        font-size: clamp(
+            58px,
+            14vw,
+            110px
+        );
+    }
+
+
+    .hero-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 40px;
+    }
+
+
+    .hero-description {
+
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+
+    .hero-scroll,
+    .hero-coordinate {
+
+        display: none;
+    }
+
+
+    .section {
+
+        width: calc(100% - 40px);
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+    .intro {
+
+        display: block;
+    }
+
+
+    .intro-content {
+
+        margin-top: 50px;
+    }
+
+
+    .projects-placeholder {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-card {
+
+        min-height: 400px;
+    }
+
+
+    .service-item {
+
+        grid-template-columns: 50px 1fr 30px;
+    }
+
+
+    .service-item h3 {
+
+        font-size: 30px;
+    }
+
+
+    .cta {
+
+        min-height: 600px;
+    }
+
+
+    .cta-title {
+
+        font-size: clamp(
+            65px,
+            17vw,
+            120px
+        );
+    }
+
+
+    .footer {
+
+        padding: 40px 20px 25px;
+    }
+
+
+    .footer-top {
+
+        margin-bottom: 70px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .hero-title {
+
+        font-size: 17vw;
+
+        line-height: .88;
+    }
+
+
+    .hero-actions {
+
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .btn {
+
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+
+    .section-title {
+
+        font-size: 38px;
+    }
+
+
+    .project-card {
+
+        min-height: 350px;
+    }
+
+
+    .project-card h3 {
+
+        font-size: 48px;
+    }
+
+
+    .service-item {
+
+        grid-template-columns: 35px 1fr 20px;
+    }
+
+
+    .service-item h3 {
+
+        font-size: 24px;
+    }
+
+
+    .cta-button {
+
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .footer-top {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
+
+/* =========================================
+   NEXORA INNER PAGE RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .page-hero {
+        min-height: 70vh;
+        padding: 130px 25px 80px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card.large {
+        grid-column: span 1;
+    }
+
+    .project-card {
+        min-height: 520px;
+    }
+
+    .service-detail {
+        grid-template-columns: 60px 1fr;
+        gap: 20px;
+    }
+
+    .service-arrow {
+        display: none;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .manifesto-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        border-right: 0;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .project-info-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .page-title {
+        font-size: 4rem;
+    }
+
+    .projects-section,
+    .services-section,
+    .process-section,
+    .about-manifesto,
+    .values-section,
+    .technology-section,
+    .contact-section,
+    .project-information,
+    .project-story {
+        padding: 80px 0;
+    }
+
+    .project-card {
+        padding: 30px;
+        min-height: 480px;
+    }
+
+    .project-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .project-visual {
+        opacity: .4;
+    }
+
+    .service-detail {
+        padding: 50px 0;
+        grid-template-columns: 40px 1fr;
+    }
+
+    .service-main h2 {
+        font-size: 3rem;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-item {
+        border-right: 0;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tech-grid div {
+        padding: 22px 15px;
+        font-size: .75rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .project-detail-title {
+        font-size: 4.5rem;
+    }
+
+    .project-image-placeholder {
+        min-height: 400px;
+    }
+
+    .story-block {
+        padding: 70px 0;
+    }
+
+    .story-block h2 {
+        font-size: 3.3rem;
+    }
+
+}

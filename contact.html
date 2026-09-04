@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Nexora</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+    <meta
+        name="description"
+        content="Contact Nexora — founded by snowysite. Let's build your next digital experience."
+    >
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        /* =========================================================
+           NEXORA CONTACT PAGE
+        ========================================================= */
+
+        .contact-page {
+            min-height: 100vh;
+            padding: 150px 30px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-container {
+            width: min(1400px, 100%);
+            margin: 0 auto;
+        }
+
+        /* Background grid */
+
+        .contact-page::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background-image:
+                linear-gradient(
+                    rgba(255,255,255,0.025) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.025) 1px,
+                    transparent 1px
+                );
+
+            background-size: 70px 70px;
+
+            mask-image: linear-gradient(
+                to bottom,
+                black,
+                transparent 90%
+            );
+
+            pointer-events: none;
+        }
+
+        /* Orange glow */
+
+        .contact-page::after {
+            content: "";
+            position: absolute;
+
+            width: 600px;
+            height: 600px;
+
+            right: -250px;
+            top: 150px;
+
+            background: rgba(255, 77, 0, 0.08);
+
+            filter: blur(120px);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+        }
+
+        /* Header */
+
+        .contact-header {
+            position: relative;
+            z-index: 2;
+
+            max-width: 900px;
+
+            margin-bottom: 80px;
+        }
+
+        .contact-eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            font-family: var(--font-main);
+            font-size: 11px;
+            letter-spacing: 0.2em;
+
+            color: var(--orange);
+
+            margin-bottom: 25px;
+        }
+
+        .contact-eyebrow span {
+            width: 30px;
+            height: 1px;
+
+            background: var(--orange);
+        }
+
+        .contact-header h1 {
+            font-family: var(--font-display);
+
+            font-size: clamp(55px, 8vw, 120px);
+
+            line-height: 0.9;
+
+            letter-spacing: -0.06em;
+
+            margin: 0;
+
+            color: var(--white);
+
+            text-transform: uppercase;
+        }
+
+        .contact-header h1 em {
+            color: var(--orange);
+            font-style: normal;
+        }
+
+        .contact-description {
+            max-width: 650px;
+
+            margin-top: 35px;
+
+            color: var(--gray-light);
+
+            font-size: 17px;
+
+            line-height: 1.8;
+        }
+
+        /* Main contact grid */
+
+        .contact-grid {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1.4fr)
+                minmax(320px, 0.6fr);
+
+            gap: 30px;
+        }
+
+        /* Main CTA */
+
+        .contact-main {
+            position: relative;
+
+            min-height: 500px;
+
+            padding: 55px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.055),
+                    rgba(255,255,255,0.015)
+                );
+
+            border: 1px solid var(--border);
+
+            overflow: hidden;
+        }
+
+        .contact-main::before {
+            content: "";
+
+            position: absolute;
+
+            width: 220px;
+            height: 220px;
+
+            right: -80px;
+            bottom: -80px;
+
+            border: 1px solid rgba(255,77,0,0.25);
+
+            transform: rotate(45deg);
+        }
+
+        .contact-main::after {
+            content: "";
+
+            position: absolute;
+
+            width: 400px;
+            height: 400px;
+
+            right: -250px;
+            bottom: -250px;
+
+            background: rgba(255,77,0,0.06);
+
+            border-radius: 50%;
+
+            filter: blur(50px);
+        }
+
+        .contact-number {
+            position: relative;
+            z-index: 2;
+
+            font-size: 11px;
+
+            letter-spacing: 0.18em;
+
+            color: var(--gray);
+
+            margin-bottom: 100px;
+        }
+
+        .contact-main h2 {
+            position: relative;
+            z-index: 2;
+
+            max-width: 700px;
+
+            font-family: var(--font-display);
+
+            font-size: clamp(38px, 5vw, 70px);
+
+            line-height: 0.98;
+
+            letter-spacing: -0.04em;
+
+            margin-bottom: 35px;
+        }
+
+        .contact-main h2 span {
+            color: var(--orange);
+        }
+
+        .contact-main p {
+            position: relative;
+            z-index: 2;
+
+            max-width: 550px;
+
+            color: var(--gray-light);
+
+            line-height: 1.7;
+
+            margin-bottom: 40px;
+        }
+
+        /* WhatsApp button */
+
+        .whatsapp-button {
+            position: relative;
+            z-index: 5;
+
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 15px;
+
+            padding: 18px 28px;
+
+            background: var(--orange);
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-family: var(--font-main);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.12em;
+
+            transition:
+                transform 0.4s cubic-bezier(.16,1,.3,1),
+                background 0.3s ease;
+
+            overflow: hidden;
+        }
+
+        .whatsapp-button::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background: #fff;
+
+            transform: translateX(-101%);
+
+            transition: transform 0.45s cubic-bezier(.16,1,.3,1);
+
+            z-index: -1;
+        }
+
+        .whatsapp-button:hover {
+            color: #050505;
+
+            transform: translateY(-5px);
+        }
+
+        .whatsapp-button:hover::before {
+            transform: translateX(0);
+        }
+
+        .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+
+            border: 2px solid currentColor;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 10px;
+        }
+
+        /* Contact details */
+
+        .contact-details {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+        }
+
+        .contact-card {
+            padding: 30px;
+
+            background: rgba(255,255,255,0.025);
+
+            border: 1px solid var(--border);
+
+            transition:
+                transform 0.4s ease,
+                border-color 0.4s ease,
+                background 0.4s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateX(-6px);
+
+            border-color: rgba(255,77,0,0.4);
+
+            background: rgba(255,77,0,0.035);
+        }
+
+        .contact-card-label {
+            display: block;
+
+            font-size: 9px;
+
+            letter-spacing: 0.2em;
+
+            color: var(--orange);
+
+            margin-bottom: 14px;
+        }
+
+        .contact-card a,
+        .contact-card .value {
+            color: var(--white);
+
+            font-family: var(--font-display);
+
+            font-size: 17px;
+
+            text-decoration: none;
+
+            word-break: break-word;
+        }
+
+        .contact-card a:hover {
+            color: var(--orange);
+        }
+
+        /* Socials */
+
+        .social-section {
+            position: relative;
+            z-index: 2;
+
+            margin-top: 100px;
+
+            border-top: 1px solid var(--border);
+
+            padding-top: 35px;
+        }
+
+        .social-header {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            margin-bottom: 30px;
+        }
+
+        .social-header span:first-child {
+            font-size: 10px;
+
+            letter-spacing: 0.2em;
+
+            color: var(--gray);
+        }
+
+        .social-header span:last-child {
+            font-size: 10px;
+
+            letter-spacing: 0.1em;
+
+            color: var(--orange);
+        }
+
+        .social-links {
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            border-top: 1px solid var(--border);
+            border-left: 1px solid var(--border);
+        }
+
+        .social-link {
+            min-height: 110px;
+
+            padding: 25px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+
+            text-decoration: none;
+
+            transition:
+                background 0.4s ease,
+                color 0.4s ease;
+        }
+
+        .social-link:hover {
+            background: var(--orange);
+        }
+
+        .social-name {
+            font-family: var(--font-display);
+
+            font-size: 18px;
+
+            color: var(--white);
+        }
+
+        .social-handle {
+            font-size: 10px;
+
+            letter-spacing: 0.1em;
+
+            color: var(--gray);
+
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover .social-handle {
+            color: #fff;
+        }
+
+        .social-arrow {
+            align-self: flex-end;
+
+            font-size: 14px;
+
+            color: var(--orange);
+
+            transition:
+                transform 0.3s ease,
+                color 0.3s ease;
+        }
+
+        .social-link:hover .social-arrow {
+            color: #fff;
+
+            transform: translate(3px, -3px);
+        }
+
+        /* Footer statement */
+
+        .contact-bottom {
+            position: relative;
+            z-index: 2;
+
+            margin-top: 100px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: flex-end;
+
+            gap: 30px;
+        }
+
+        .contact-bottom h3 {
+            max-width: 700px;
+
+            font-family: var(--font-display);
+
+            font-size: clamp(28px, 4vw, 52px);
+
+            line-height: 1;
+
+            letter-spacing: -0.04em;
+
+            margin: 0;
+        }
+
+        .contact-bottom h3 span {
+            color: var(--orange);
+        }
+
+        .contact-signature {
+            text-align: right;
+
+            font-size: 10px;
+
+            letter-spacing: 0.15em;
+
+            color: var(--gray);
+
+            line-height: 2;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 900px) {
+
+            .contact-page {
+                padding: 120px 20px 70px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-main {
+                min-height: auto;
+
+                padding: 35px;
+            }
+
+            .contact-number {
+                margin-bottom: 70px;
+            }
+
+            .social-links {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .contact-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .contact-signature {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .contact-header h1 {
+                font-size: 50px;
+            }
+
+            .contact-description {
+                font-size: 15px;
+            }
+
+            .contact-main {
+                padding: 25px;
+            }
+
+            .contact-main h2 {
+                font-size: 38px;
+            }
+
+            .whatsapp-button {
+                width: 100%;
+            }
+
+            .social-links {
+                grid-template-columns: 1fr;
+            }
+
+            .social-link {
+                min-height: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================= -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">N</span>
+            <span class="logo-text">NEXORA</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                <span>01</span> Home
+            </a>
+
+            <a href="projects.html">
+                <span>02</span> Projects
+            </a>
+
+            <a href="services.html">
+                <span>03</span> Services
+            </a>
+
+            <a href="about.html">
+                <span>04</span> About
+            </a>
+
+            <a href="contact.html" class="active">
+                <span>05</span> Contact
+            </a>
+
+        </div>
+
+        <a
+            href="https://wa.me/2347026041880?text=Hello%20Nexora%2C%20I%27d%20like%20to%20discuss%20a%20project."
+            class="nav-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Let's Talk ↗
+        </a>
+
+        <button class="menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
+
+    </nav>
+
+
+    <!-- =========================================================
+         CONTACT PAGE
+    ========================================================= -->
+
+    <main class="contact-page">
+
+        <div class="contact-container">
+
+            <!-- Header -->
+
+            <header class="contact-header reveal">
+
+                <div class="contact-eyebrow">
+                    <span></span>
+                    CONTACT // 005
+                </div>
+
+                <h1>
+                    LET'S BUILD<br>
+                    SOMETHING <em>REAL.</em>
+                </h1>
+
+                <p class="contact-description">
+                    Have an idea, a business problem, or a digital product
+                    that needs to exist? Tell Nexora what you're building.
+                    Let's turn the idea into something fast, intelligent,
+                    useful and impossible to ignore.
+                </p>
+
+            </header>
+
+
+            <!-- Contact Grid -->
+
+            <section class="contact-grid">
+
+                <!-- Main CTA -->
+
+                <div class="contact-main reveal">
+
+                    <div class="contact-number">
+                        NEXORA // DIRECT CONNECTION
+                    </div>
+
+                    <h2>
+                        THE FASTEST WAY TO
+                        <span>REACH US.</span>
+                    </h2>
+
+                    <p>
+                        Skip the forms. Send a message directly on WhatsApp
+                        and let's talk about your project, website, software,
+                        AI system, automation or digital experience.
+                    </p>
+
+                    <a
+                        href="https://wa.me/2347026041880?text=Hello%20Nexora%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="whatsapp-button"
+                    >
+                        <span class="whatsapp-icon">↗</span>
+
+                        CHAT ON WHATSAPP
+
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <!-- Contact Details -->
+
+                <div class="contact-details">
+
+                    <div class="contact-card reveal">
+
+                        <span class="contact-card-label">
+                            WHATSAPP
+                        </span>
+
+                        <a
+                            href="https://wa.me/2347026041880"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            +234 702 604 1880
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-card reveal">
+
+                        <span class="contact-card-label">
+                            EMAIL
+                        </span>
+
+                        <a href="mailto:sitesnow77@gmail.com">
+                            sitesnow77@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-card reveal">
+
+                        <span class="contact-card-label">
+                            LOCATION
+                        </span>
+
+                        <div class="value">
+                            Lagos, Nigeria
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-card reveal">
+
+                        <span class="contact-card-label">
+                            IDENTITY
+                        </span>
+
+                        <div class="value">
+                            Nexora — founded by snowysite
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Social Links -->
+
+            <section class="social-section reveal">
+
+                <div class="social-header">
+
+                    <span>
+                        CONNECT // SOCIAL SYSTEMS
+                    </span>
+
+                    <span>
+                        SNOWYSITE
+                    </span>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <!-- GitHub -->
+
+                    <a
+                        href="https://github.com/snowysite"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+
+                        <span class="social-name">
+                            GitHub
+                        </span>
+
+                        <span class="social-handle">
+                            @snowysite
+                        </span>
+
+                        <span class="social-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- LinkedIn -->
+
+                    <a
+                        href="https://www.linkedin.com/in/snowysite/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+
+                        <span class="social-name">
+                            LinkedIn
+                        </span>
+
+                        <span class="social-handle">
+                            @snowysite
+                        </span>
+
+                        <span class="social-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- Instagram -->
+
+                    <a
+                        href="https://www.instagram.com/snowysite/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+
+                        <span class="social-name">
+                            Instagram
+                        </span>
+
+                        <span class="social-handle">
+                            @snowysite
+                        </span>
+
+                        <span class="social-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- X -->
+
+                    <a
+                        href="https://x.com/snowysite"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+
+                        <span class="social-name">
+                            X
+                        </span>
+
+                        <span class="social-handle">
+                            @snowysite
+                        </span>
+
+                        <span class="social-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- Facebook -->
+
+                    <a
+                        href="https://www.facebook.com/snowysite"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                    >
+
+                        <span class="social-name">
+                            Facebook
+                        </span>
+
+                        <span class="social-handle">
+                            @snowysite
+                        </span>
+
+                        <span class="social-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Bottom CTA -->
+
+            <section class="contact-bottom reveal">
+
+                <h3>
+                    GOOD PROJECTS START
+                    WITH A <span>CONVERSATION.</span>
+                </h3>
+
+                <div class="contact-signature">
+                    NEXORA DIGITAL SYSTEMS<br>
+                    LAGOS // NIGERIA<br>
+                    © 2026
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer class="site-footer">
+
+        <div>
+            SYSTEM ONLINE
+        </div>
+
+        <div>
+            © 2026 NEXORA DIGITAL SYSTEMS
+        </div>
+
+        <div>
+            BUILT WITH INTENT.
+        </div>
+
+    </footer>
+
+
+    <!-- GSAP -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    </script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+    </script>
+
+
+    <!-- Existing JS -->
+
+    <script src="js/loader.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Contact Page JS -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            /*
+             * Reveal animations
+             */
+
+            if (typeof gsap !== "undefined") {
+
+                gsap.utils.toArray(".reveal").forEach((element, index) => {
+
+                    gsap.fromTo(
+                        element,
+
+                        {
+                            opacity: 0,
+                            y: 40
+                        },
+
+                        {
+                            opacity: 1,
+                            y: 0,
+
+                            duration: 1,
+
+                            delay: index * 0.08,
+
+                            ease: "power3.out",
+
+                            scrollTrigger: {
+                                trigger: element,
+                                start: "top 88%",
+                                once: true
+                            }
+                        }
+                    );
+
+                });
+
+
+                /*
+                 * WhatsApp button magnetic effect
+                 */
+
+                const button =
+                    document.querySelector(".whatsapp-button");
+
+                if (button) {
+
+                    button.addEventListener("mousemove", (e) => {
+
+                        const rect =
+                            button.getBoundingClientRect();
+
+                        const x =
+                            e.clientX - rect.left - rect.width / 2;
+
+                        const y =
+                            e.clientY - rect.top - rect.height / 2;
+
+                        gsap.to(button, {
+                            x: x * 0.08,
+                            y: y * 0.08,
+                            duration: 0.3,
+                            ease: "power2.out"
+                        });
+
+                    });
+
+
+                    button.addEventListener("mouseleave", () => {
+
+                        gsap.to(button, {
+                            x: 0,
+                            y: 0,
+                            duration: 0.5,
+                            ease: "elastic.out(1, 0.4)"
+                        });
+
+                    });
+
+                }
+
+            }
+
+        });
+
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="js/loader.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
