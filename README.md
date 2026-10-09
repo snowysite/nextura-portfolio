@@ -1,52 +1,24 @@
-# NEXTURA — Interactive Portfolio
+# NEXTURA — Digital Awakening Portfolio
 
-An original, responsive, game-inspired portfolio with a black and orange-red visual system, animated interface details, project showcases, and an interactive 3D geometric avatar.
+An anime-inspired, game-UI portfolio for Blacksnow / Nextura, designed for GitHub Pages and mobile-first viewing.
 
-## Preview locally
+## What's included
+- Cinematic navy, cyan and orange-red art direction with RPG/menu-style labels
+- Original procedural low-poly 3D avatar built from Three.js geometry (no copyrighted character assets)
+- Interactive mouse-responsive avatar, floating shards and orbit rings
+- CSS-only avatar fallback if WebGL or the Three.js CDN is unavailable
+- Responsive project cards for NexRide, Nexora, Jabico Consultancy and Creative Web Lab
+- Mobile navigation, scroll reveal, copy-email action, reduced-motion support
+- No build step required; static HTML/CSS/JS
 
-This is a static site. You can open `index.html` directly for most of the layout, but a local server is recommended so browser module imports work reliably.
-
-### Quick local server
-If Python is installed:
-```bash
-python -m http.server 8000
-```
-Then open `http://localhost:8000`.
-
-## Publish with GitHub Pages
-
-1. Create a new repository on GitHub, for example `nextura-portfolio`.
-2. Upload the contents of this folder to the repository root (make sure `index.html` is at the root).
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then save.
-6. Wait for the Pages deployment and open the URL GitHub provides.
-
-You can also import the repository into Vercel and deploy it as a static site. No build command is required.
-
-## Personalize before publishing
-
-Search `index.html` and `script.js` for these placeholders:
-- `hello@nextura.dev` — replace with your real contact email.
-- Add your real GitHub, LinkedIn, and other profile URLs when you are ready.
-- Confirm project descriptions and mark which projects are live, in progress, or concept work.
-- Replace the sample project visuals with screenshots of your real work when available.
-
-## 3D avatar
-
-The scene uses Three.js loaded as an ES module from jsDelivr. An abstract, original geometric android is built in code; no external 3D model file is needed. The site retains a CSS fallback if Three.js cannot load. Internet access is needed for the CDN module and Google Fonts. For fully offline operation, download and vendor those dependencies locally.
-
-## Features
-
-- Responsive mobile-first layout
-- Animated boot screen, status clock, reveal transitions, hover interactions
-- Interactive Three.js geometric avatar with pointer tracking and floating orbit rings
-- Project portfolio: NexRide, Nexora, Jabico Consultancy, digital experiences
-- Skills/capabilities section and contact CTA
-- Optional sound toggle (off by default)
-- Reduced-motion preference support
-- No backend or API keys required
+## Publish on GitHub Pages
+1. Extract the ZIP.
+2. Upload `index.html`, `style.css`, `script.js`, `.nojekyll`, and `README.md` to the root of `snowysite/nextura-portfolio`.
+3. Commit to `main`.
+4. Keep Settings → Pages set to `Deploy from a branch`, `main`, `/(root)`.
+5. Open `https://snowysite.github.io/nextura-portfolio/` after the deployment finishes.
 
 ## Notes
-
-Project descriptions are based on the supplied portfolio context and include concepts/ongoing builds. Review and update all details before presenting them as completed client work. The example email is a placeholder and must be replaced before launch.
+- Three.js is loaded from cdnjs; Google Fonts are optional visual enhancements. A fallback avatar is provided if WebGL/CDN fails.
+- Contact email is set to `sitesnow77@gmail.com`.
+- Project descriptions are portfolio summaries; update them as each build ships.

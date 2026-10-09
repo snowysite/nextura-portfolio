@@ -1,98 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#08090b">
-  <meta name="description" content="Nextura — interactive portfolio of a developer building digital products, web experiences, and useful technology.">
-  <title>NEXTURA — Digital Architect</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080b19">
+<meta name="description" content="Nextura — an anime-inspired interactive portfolio by Blacksnow, building digital products, AI experiences and web platforms.">
+<title>NEXTURA // DIGITAL AWAKENING</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="scanlines" aria-hidden="true"></div>
-  <div class="boot" id="boot"><div class="boot-mark">N<span>/</span></div><div class="boot-label">INITIALIZING NEXTURA OS</div><div class="boot-track"><i></i></div><div class="boot-status" id="bootStatus">LOADING INTERFACE MODULES...</div></div>
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="Nextura home"><span class="brand-symbol">N<span>/</span></span><span>NEXTURA<small>PERSONAL SYSTEM // 001</small></span></a>
-    <div class="top-status"><span class="status-dot"></span> SYSTEM ONLINE <span class="status-divider">/</span> <span id="clock">00:00:00</span></div>
-    <button class="sound-toggle" id="soundToggle" aria-pressed="false"><span class="sound-icon">♪</span><span id="soundText">SOUND OFF</span></button>
-  </header>
-
-  <main id="home">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span> INDEPENDENT DEVELOPER / DIGITAL BUILDER</div>
-        <h1>BUILDING<br>WHAT'S <span class="outline-word">NEXT.</span></h1>
-        <p class="hero-lead">I turn ambitious ideas into useful digital experiences — from interactive websites to products designed to solve real problems.</p>
-        <div class="hero-actions">
-          <a class="primary-btn" href="#projects">EXPLORE MY WORK <span>↗</span></a>
-          <a class="text-btn" href="#contact">START A CONVERSATION <span>↗</span></a>
-        </div>
-        <div class="hero-foot"><span>BASED IN NIGERIA</span><span class="foot-line"></span><span>AVAILABLE FOR SELECT PROJECTS</span></div>
-      </div>
-      <div class="scene-panel">
-        <div class="scene-label"><span>FIG. 01</span> // AVATAR SIMULATION</div>
-        <div id="scene" aria-label="Interactive 3D geometric avatar">
-          <div class="scene-fallback"><div class="fallback-orb"></div><div class="fallback-ring"></div><div class="fallback-caption">3D AVATAR / INITIALIZING</div></div>
-        </div>
-        <div class="scene-hint"><span class="pulse"></span> MOVE YOUR CURSOR TO INTERACT</div>
-        <div class="scene-coords">NX-001<br>CORE ONLINE</div>
-        <div class="scene-corner top-left"></div><div class="scene-corner bottom-right"></div>
-      </div>
-      <div class="vertical-index">PORTFOLIO / 2026</div>
-    </section>
-
-    <section class="ticker" aria-label="Areas of focus"><div class="ticker-track"><span>DESIGN WITH INTENT</span><b>✳</b><span>BUILD WITH PURPOSE</span><b>✳</b><span>SHIP WHAT MATTERS</span><b>✳</b><span>DESIGN WITH INTENT</span><b>✳</b><span>BUILD WITH PURPOSE</span><b>✳</b><span>SHIP WHAT MATTERS</span><b>✳</b></div></section>
-
-    <section class="section-shell section-block" id="profile">
-      <div class="section-heading"><div><span class="section-number">01 / PROFILE</span><h2>THE MIND<br>BEHIND THE <span class="orange">MACHINE.</span></h2></div><p class="section-intro">Curious by nature. Builder by choice. Focused on turning technology into experiences people can actually use.</p></div>
-      <div class="profile-grid">
-        <div class="profile-statement"><span class="quote-mark">“</span><p>I believe the best technology doesn't just look impressive. It makes something easier, faster, clearer, or possible for the first time.</p><div class="signature">NEXTURA <span>— DIGITAL ARCHITECT</span></div></div>
-        <div class="profile-facts">
-          <div class="fact"><span class="fact-index">A</span><div><h3>PRODUCT THINKING</h3><p>Start with the problem. Build around the people using it. Keep refining.</p></div></div>
-          <div class="fact"><span class="fact-index">B</span><div><h3>FULL-CYCLE CURIOSITY</h3><p>From interface and frontend logic to backend workflows, data, and deployment.</p></div></div>
-          <div class="fact"><span class="fact-index">C</span><div><h3>ALWAYS LEARNING</h3><p>Experimenting, shipping, breaking things thoughtfully, and getting better.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell section-block" id="projects">
-      <div class="section-heading"><div><span class="section-number">02 / SELECTED WORK</span><h2>IDEAS MADE<br><span class="orange">INTERACTIVE.</span></h2></div><p class="section-intro">A selection of product concepts and builds across web development, AI, and digital services.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-feature">
-          <div class="project-art ride-art"><div class="art-grid"></div><div class="ride-route"><span>START</span><svg viewBox="0 0 360 140" role="img" aria-label="Abstract route illustration"><path d="M10 110 C 60 110, 54 30, 120 48 S 190 120, 236 70 S 290 10, 350 28" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5 7"/><circle cx="10" cy="110" r="5" fill="currentColor"/><circle cx="350" cy="28" r="5" fill="currentColor"/></svg><span class="route-end">DESTINATION</span></div><div class="art-label">MOBILITY / SYSTEM 01</div></div>
-          <div class="project-info"><div class="project-meta"><span>01 — MOBILITY</span><span>PRODUCT CONCEPT</span></div><h3>NexRide</h3><p>A ride-hailing platform concept connecting rider experience, driver workflows, dispatch, payments, and admin operations.</p><div class="tag-row"><span>React</span><span>APIs</span><span>Real-time systems</span></div><a class="project-link" href="#contact" data-project="NexRide">DISCUSS THIS PROJECT <span>↗</span></a></div>
-        </article>
-        <article class="project-card">
-          <div class="project-art ai-art"><div class="ai-core"><span>N</span><i></i><i></i><i></i></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-label">AI / SYSTEM 02</div></div>
-          <div class="project-info"><div class="project-meta"><span>02 — AI</span><span>ASSISTANT</span></div><h3>Nexora</h3><p>An AI assistant experience exploring conversational support, productivity, personality modes, and helpful offline fallbacks.</p><div class="tag-row"><span>Python</span><span>Flask</span><span>AI UX</span></div><a class="project-link" href="#contact" data-project="Nexora">DISCUSS THIS PROJECT <span>↗</span></a></div>
-        </article>
-        <article class="project-card">
-          <div class="project-art consult-art"><div class="consult-window"><div class="window-top"><b></b><b></b><b></b><span>JABICO / PORTAL</span></div><div class="window-line long"></div><div class="window-line"></div><div class="window-cards"><i></i><i></i><i></i></div><div class="window-line long"></div></div><div class="art-label">EDTECH / SYSTEM 03</div></div>
-          <div class="project-info"><div class="project-meta"><span>03 — EDUCATION</span><span>WEB PLATFORM</span></div><h3>Jabico Consultancy</h3><p>A consultancy website and student portal concept with separate admin workflows, resource management, and student access.</p><div class="tag-row"><span>Web apps</span><span>Auth flows</span><span>Deployment</span></div><a class="project-link" href="#contact" data-project="Jabico Consultancy">DISCUSS THIS PROJECT <span>↗</span></a></div>
-        </article>
-        <article class="project-card">
-          <div class="project-art web-art"><div class="browser-frame"><div class="browser-bar"><span></span><span></span><span></span></div><div class="browser-content"><div class="browser-title">MAKE IT<br><em>MATTER.</em></div><div class="browser-shape"></div><div class="browser-cta"></div></div></div><div class="art-label">WEB / SYSTEM 04</div></div>
-          <div class="project-info"><div class="project-meta"><span>04 — WEB</span><span>EXPERIMENTS</span></div><h3>Digital Experiences</h3><p>Responsive websites, landing pages, portfolio interfaces, and experiments that blend clear messaging with bold visual identity.</p><div class="tag-row"><span>HTML/CSS</span><span>JavaScript</span><span>UI design</span></div><a class="project-link" href="#contact" data-project="Digital Experiences">DISCUSS THIS PROJECT <span>↗</span></a></div>
-        </article>
-      </div>
-      <p class="disclaimer">Selected work includes ongoing builds and product concepts. Details can be shared during a project conversation.</p>
-    </section>
-
-    <section class="section-shell section-block" id="capabilities">
-      <div class="section-heading"><div><span class="section-number">03 / CAPABILITIES</span><h2>THE TOOLKIT<br><span class="orange">IN MOTION.</span></h2></div><p class="section-intro">A growing toolkit for shaping ideas into usable, maintainable digital products.</p></div>
-      <div class="skills-list">
-        <div class="skill-row"><span class="skill-code">01</span><h3>FRONTEND DEVELOPMENT</h3><p>Responsive interfaces / interactive components / accessibility</p><span class="skill-arrow">↗</span></div>
-        <div class="skill-row"><span class="skill-code">02</span><h3>BACKEND & INTEGRATION</h3><p>Python / Flask / APIs / authentication / data workflows</p><span class="skill-arrow">↗</span></div>
-        <div class="skill-row"><span class="skill-code">03</span><h3>PRODUCT PROTOTYPING</h3><p>From idea validation to usable interface and feature flows</p><span class="skill-arrow">↗</span></div>
-        <div class="skill-row"><span class="skill-code">04</span><h3>DEPLOYMENT & ITERATION</h3><p>Git / GitHub / Vercel / Render / debugging and refinement</p><span class="skill-arrow">↗</span></div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact"><div class="section-shell contact-inner"><span class="section-number">04 / NEXT MOVE</span><h2>HAVE AN IDEA?<br><span class="orange">LET'S BUILD IT.</span></h2><p>Have a website, platform, or product idea? Tell me what you're trying to solve and let's map out the next step.</p><div class="contact-actions"><a class="primary-btn" href="mailto:hello@nextura.dev?subject=Let's%20build%20something">EMAIL NEXTURA <span>↗</span></a><button class="text-btn copy-email" id="copyEmail">COPY EMAIL <span>⧉</span></button></div><div class="contact-note" id="copyNote" aria-live="polite">RESPONSE CHANNEL READY</div></div><div class="contact-graphic" aria-hidden="true"><div class="graphic-ring r1"></div><div class="graphic-ring r2"></div><div class="graphic-ring r3"></div><span>N/</span></div></section>
-  </main>
-  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-symbol">N<span>/</span></span><span>NEXTURA<small>PERSONAL SYSTEM // 001</small></span></a><div>DESIGNED TO EVOLVE <span class="orange">●</span> © <span id="year"></span> NEXTURA</div><a class="back-top" href="#home">BACK TO TOP ↑</a></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="script.js"></script>
-</body>
-</html>
+<div class="grain" aria-hidden="true"></div><div class="cursor-aura" id="cursorAura" aria-hidden="true"></div>
+<div class="boot" id="boot"><div class="boot-logo">N<span>✳</span></div><div class="boot-title">NEXTURA / AWAKENING</div><div class="boot-bar"><i></i></div><div class="boot-note" id="bootNote">SYNCHRONIZING DIGITAL SOUL...</div></div>
+<header class="nav"><a class="wordmark" href="#home"><span class="mark">N<span>✳</span></span><span>NEXTURA<small>BLACKSNOW / CREATIVE SYSTEM</small></span></a><div class="nav-center"><span class="live-dot"></span> PORTFOLIO ONLINE <b>•</b> 2026</div><button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button><nav id="navLinks"><a href="#profile">PROFILE</a><a href="#projects">PROJECTS</a><a href="#skills">ARSENAL</a><a href="#contact" class="nav-cta">LET'S TALK ↗</a></nav></header>
+<main id="home">
+<section class="hero wrap">
+ <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> INDEPENDENT DEVELOPER <span class="slash">/</span> DIGITAL CREATOR</div>
+ <div class="hero-kicker">PLAYER ONE <span>HAS ENTERED THE SYSTEM</span></div>
+ <h1>CREATE<br><span class="stroke">BEYOND</span><br><em>LIMITS.</em></h1>
+ <p class="hero-desc">I'm <strong>Blacksnow</strong> — a developer shaping bold ideas into useful digital worlds. From AI assistants to platforms and immersive web experiences, I build things that move people forward.</p>
+ <div class="hero-actions"><a class="btn btn-primary" href="#projects">ENTER MY WORLD <span>↗</span></a><a class="btn btn-quiet" href="#contact">START A QUEST <span>⟶</span></a></div>
+ <div class="hero-meta"><span><i></i> AVAILABLE FOR SELECT PROJECTS</span><span>OWERRI, NIGERIA <b>↗</b></span></div>
+ </div>
+ <div class="hero-visual"><div class="visual-backdrop"></div><div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div><div class="visual-orbit orbit-c"></div><div class="visual-cross cross-a">✳</div><div class="visual-cross cross-b">+</div><div class="visual-label label-top"><span>CHARACTER FILE / 001</span><b>BLACKSNOW</b></div>
+  <div id="scene" class="scene" aria-label="Interactive original anime-inspired 3D character"><div class="scene-loading"><div class="loading-core"></div><span>LOADING AVATAR...</span></div></div>
+  <div class="character-chip"><span class="chip-icon">N</span><span><b>THE BUILDER</b><small>LEVEL 19+ / ALWAYS EVOLVING</small></span><span class="chip-arrow">↗</span></div>
+  <div class="visual-label label-bottom"><span>3D CHARACTER / INTERACTIVE</span><span class="move-hint">MOVE TO INTERACT <b>⌖</b></span></div>
+  <div class="visual-index">01 <span>/ 04</span></div>
+ </div>
+ <div class="hero-side-note">IDEAS ARE THE BEGINNING <span>✳</span> EXECUTION IS THE DIFFERENCE</div>
+</section>
+<div class="ticker"><div class="ticker-track"><span>BUILD YOUR OWN WORLD</span><b>✳</b><span>DESIGN WITH INTENT</span><b>✳</b><span>SHIP WHAT MATTERS</span><b>✳</b><span>STAY CURIOUS</span><b>✳</b><span>BUILD YOUR OWN WORLD</span><b>✳</b><span>DESIGN WITH INTENT</span><b>✳</b><span>SHIP WHAT MATTERS</span><b>✳</b></div></div>
+<section class="section wrap profile" id="profile"><div class="section-head"><div><div class="section-code">01 <span>/ CHARACTER PROFILE</span></div><h2>NOT JUST CODE.<br><span>A WHOLE VISION.</span></h2></div><p class="section-blurb">Every great build starts with curiosity and becomes real through patience, experiments, and a refusal to stop learning.</p></div>
+ <div class="profile-layout"><div class="profile-card"><div class="card-stamp">N/</div><div class="profile-quote">“I don't just want to use the future.<br><em>I want to help build it.</em>”</div><div class="profile-sign"><span class="signature">Blacksnow</span><span class="sign-caption">CREATOR / BUILDER / DREAMER</span></div><div class="profile-bars"><span>CREATIVITY <i><b style="width:88%"></b></i></span><span>CURIOSITY <i><b style="width:96%"></b></i></span><span>EXECUTION <i><b style="width:82%"></b></i></span></div></div>
+ <div class="profile-details"><article class="detail-row"><span class="detail-number">A</span><div><h3>PRODUCT THINKING</h3><p>Start with the real problem. Make the experience clear. Build around the people who will use it.</p></div><span class="detail-symbol">↗</span></article><article class="detail-row"><span class="detail-number">B</span><div><h3>FULL-STACK CURIOSITY</h3><p>Interfaces, backend logic, APIs, databases, authentication, and the messy details that make products work.</p></div><span class="detail-symbol">↗</span></article><article class="detail-row"><span class="detail-number">C</span><div><h3>ALWAYS IN BETA</h3><p>Learn, experiment, ship, listen, improve. Every project is another level unlocked.</p></div><span class="detail-symbol">↗</span></article><div class="profile-note"><span class="live-dot"></span> CURRENT STATUS: BUILDING WHAT'S NEXT</div></div></div>
+</section>
+<section class="projects-section" id="projects"><div class="wrap section"><div class="section-head"><div><div class="section-code">02 <span>/ SELECTED MISSIONS</span></div><h2>WORLDS I'M<br><span>BRINGING TO LIFE.</span></h2></div><p class="section-blurb">Real builds and ambitious concepts across mobility, AI, education, and expressive web design.</p></div>
+ <div class="project-grid">
+ <article class="project-card featured"><div class="project-art ride-art"><div class="art-top"><span>MISSION 001</span><span>IN DEVELOPMENT ↗</span></div><div class="map-lines"></div><div class="route-path"><span class="route-node node-one"></span><span class="route-node node-two"></span><svg viewBox="0 0 500 220" preserveAspectRatio="none"><path d="M25 188 C105 178 90 58 190 90 S285 190 330 100 S405 28 480 45"/></svg></div><div class="ride-ui"><div class="ride-ui-top"><span>NX / MOBILITY</span><span>● LIVE CONCEPT</span></div><strong>MOVE<br><em>WITHOUT LIMITS.</em></strong><div class="ride-ui-bottom"><span>RIDER ↔ DRIVER</span><span>01 / 04</span></div></div><span class="art-number">01</span></div><div class="project-info"><div class="project-meta"><span>01 — MOBILITY</span><span>PRODUCT PLATFORM</span></div><h3>NexRide <span>↗</span></h3><p>A ride-hailing platform concept connecting riders, drivers, dispatch, payments, live tracking, and admin operations.</p><div class="tags"><span>REAL-TIME</span><span>MAPS / GPS</span><span>FULL-STACK</span></div><a href="#contact" class="project-cta" data-project="NexRide">DISCUSS THIS BUILD <b>↗</b></a></div></article>
+ <article class="project-card"><div class="project-art ai-art"><div class="art-top"><span>MISSION 002</span><span>AI / ASSISTANT</span></div><div class="ai-grid"></div><div class="ai-sigil"><div class="sigil-ring ring-1"></div><div class="sigil-ring ring-2"></div><div class="sigil-center">N<span>✳</span></div><i class="sigil-orb orb-1"></i><i class="sigil-orb orb-2"></i><i class="sigil-orb orb-3"></i></div><div class="ai-word">NEXORA</div><span class="art-number">02</span></div><div class="project-info"><div class="project-meta"><span>02 — ARTIFICIAL INTELLIGENCE</span><span>PERSONAL AI</span></div><h3>Nexora <span>↗</span></h3><p>An AI assistant concept for guidance, productivity, personality modes, and useful offline fallbacks.</p><div class="tags"><span>PYTHON</span><span>FLASK</span><span>AI UX</span></div><a href="#contact" class="project-cta" data-project="Nexora">DISCUSS THIS BUILD <b>↗</b></a></div></article>
+ <article class="project-card"><div class="project-art jabico-art"><div class="art-top"><span>MISSION 003</span><span>EDTECH</span></div><div class="portal-card"><div class="portal-header"><span>J / PORTAL</span><span>•••</span></div><div class="portal-welcome">LEARN.<br><em>LEVEL UP.</em></div><div class="portal-line wide"></div><div class="portal-line"></div><div class="portal-modules"><i></i><i></i><i></i></div><div class="portal-footer"><span>STUDENT ACCESS</span><span>→</span></div></div><span class="art-number">03</span></div><div class="project-info"><div class="project-meta"><span>03 — EDUCATION</span><span>WEB PLATFORM</span></div><h3>Jabico Consultancy <span>↗</span></h3><p>A consultancy website and student portal concept with admin workflows, resource uploads, and student access.</p><div class="tags"><span>AUTH</span><span>PORTALS</span><span>DEPLOYMENT</span></div><a href="#contact" class="project-cta" data-project="Jabico Consultancy">DISCUSS THIS BUILD <b>↗</b></a></div></article>
+ <article class="project-card"><div class="project-art web-art"><div class="art-top"><span>MISSION 004</span><span>CREATIVE LAB</span></div><div class="web-window"><div class="web-window-bar"><i></i><i></i><i></i><span>nextura / experiments</span></div><div class="web-window-content"><span>DESIGN / CODE / REPEAT</span><strong>MAKE<br><em>IT MATTER.</em></strong><div class="window-shapes"><i></i><i></i><i></i></div></div></div><span class="art-number">04</span></div><div class="project-info"><div class="project-meta"><span>04 — WEB</span><span>DIGITAL EXPERIENCES</span></div><h3>Creative Web Lab <span>↗</span></h3><p>Responsive websites, bold landing pages, interactive interfaces, and experiments with personality.</p><div class="tags"><span>HTML / CSS</span><span>JAVASCRIPT</span><span>UI DESIGN</span></div><a href="#contact" class="project-cta" data-project="Creative Web Lab">DISCUSS THIS BUILD <b>↗</b></a></div></article>
+ </div><p class="project-footnote">* Selected builds include active development and product concepts. Ask me about the details.</p></div></section>
+<section class="section wrap skills" id="skills"><div class="section-head"><div><div class="section-code">03 <span>/ THE ARSENAL</span></div><h2>SKILLS ARE<br><span>THE LOADOUT.</span></h2></div><p class="section-blurb">A growing toolkit for turning a sketch of an idea into a working digital experience.</p></div><div class="arsenal-grid"><div class="arsenal-item"><span class="arsenal-index">01</span><div class="arsenal-icon">⌘</div><h3>FRONTEND</h3><p>Interfaces that feel alive, responsive, and easy to use.</p><div class="arsenal-tags">HTML · CSS · JS · UI</div></div><div class="arsenal-item"><span class="arsenal-index">02</span><div class="arsenal-icon">⌬</div><h3>BACKEND</h3><p>Routes, APIs, authentication, data, and app logic.</p><div class="arsenal-tags">PYTHON · FLASK · SQL</div></div><div class="arsenal-item"><span class="arsenal-index">03</span><div class="arsenal-icon">✳</div><h3>PRODUCT DESIGN</h3><p>Shape features around actual user needs and goals.</p><div class="arsenal-tags">PROTOTYPING · UX</div></div><div class="arsenal-item"><span class="arsenal-index">04</span><div class="arsenal-icon">↗</div><h3>DEPLOYMENT</h3><p>Push projects online, debug issues, and keep improving.</p><div class="arsenal-tags">GIT · GITHUB · VERCEL</div></div></div></section>
+<section class="contact" id="contact"><div class="contact-sun"></div><div class="wrap contact-inner"><div class="section-code">04 <span>/ YOUR NEXT MOVE</span></div><div class="contact-grid"><div><h2>LET'S MAKE<br><span>SOMETHING REAL.</span></h2><p>Got a website, platform, or ambitious idea? Let's talk about the problem, map out the build, and take the first step.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:sitesnow77@gmail.com?subject=Let's%20build%20something">SEND A TRANSMISSION <span>↗</span></a><button class="btn btn-quiet" id="copyEmail">COPY EMAIL <span>⧉</span></button></div><div id="copyNote" class="copy-note" aria-live="polite">CHANNEL READY / sitesnow77@gmail.com</div></div><div class="contact-emblem"><div class="emblem-ring e1"></div><div class="emblem-ring e2"></div><div class="emblem-ring e3"></div><div class="emblem-core">N<span>✳</span></div><span class="emblem-caption">END OF DEMO / START OF SOMETHING</span></div></div></div></section>
+</main>
+<footer class="footer wrap"><a class="wordmark" href="#home"><span class="mark">N<span>✳</span></span><span>NEXTURA<small>BLACKSNOW / CREATIVE SYSTEM</small></span></a><span class="footer-copy">BUILT WITH CURIOSITY <b>✳</b> © <span id="year"></span></span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script><script src="script.js"></script>
+</body></html>
